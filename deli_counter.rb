@@ -3,8 +3,8 @@ def line(deli)
      puts "The line is currently empty."
     else
       inline = "The line is currently:"
-      deli.each_with_index(1) do |name, i|
-        inline << "#{i}. #{name}"
+      deli.each_with_index do |name, i|
+        inline << "#{i+1}. #{name}"
     end
     puts inline
   end

@@ -6,7 +6,7 @@ def line(deli)
       deli.each_with_index do |name, i|
         inline << "#{i+1}. #{name} "
     end
-    inline = inline.pop
+    inline.pop
     puts inline
   end
 end    
